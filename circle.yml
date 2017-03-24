@@ -1,3 +1,5 @@
-machine:
-  services:
-    - docker
+deployment:
+  dcos:
+    branch: master
+    commands:
+      - deploy.sh

@@ -7,4 +7,4 @@ TOKEN=`curl -X POST -H "Content-Type: application/json" -d "{ \"uid\": \"$DCOS_U
 # Do Post marathon.json to DC/OS
 
 #curl -H "Content-Type: application/json" --data @marathon.json "http://$DCOS_MASTER/marathon/v2/apps"
-curl -H "Authorization: $TOKEN" -H "Content-Type: application/json" --data @marathon.json "http://$DCOS_MASTER/marathon/v2/apps"
+curl -H "Authorization: token=$TOKEN" -H "Content-Type: application/json" --data @marathon.json "http://$DCOS_MASTER/marathon/v2/apps"

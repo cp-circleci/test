@@ -2,7 +2,7 @@
 
 # Do Login
 
-TOKEN=`curl -X POST -H "Content-Type: application/json" -d "{ \"uid\": \"$DCOS_USER\", \"password\": \"$DCOS_PASSWORD\" }" "http://$DCOS_MASTER/acs/api/v1/auth/login" | grep token | awk '{print $2}'`
+TOKEN=`curl -X POST -H "Content-Type: application/json" -d "{ \"uid\": \"$DCOS_USER\", \"password\": \"$DCOS_PASSWORD\" }" "http://$DCOS_MASTER/acs/api/v1/auth/login" | grep token | awk '{print $2}' | awk -F\" '{print $2}'`
 
 # Do Post marathon.json to DC/OS
 

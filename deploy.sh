@@ -6,4 +6,4 @@ curl -X POST -H "Content-Type: application/json" -d "{ \"uid\": \"$DCOS_USER\", 
 
 # Do Post marathon.json to DC/OS
 
-curl -F @marathon.json "http://$DCOS_MASTER/marathon/v2/apps"
+curl -H "Content-Type: application/json" -F @marathon.json "http://$DCOS_MASTER/marathon/v2/apps"

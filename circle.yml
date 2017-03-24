@@ -2,4 +2,4 @@ deployment:
   dcos:
     branch: master
     commands:
-      - deploy.sh
+      - ./deploy.sh

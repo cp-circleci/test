@@ -1,5 +1,5 @@
 {
-  "id": "/debian",
+  "id": "/qbo-dev/debian",
   "cmd": "sleep 5000",
   "instances": 2,
   "cpus": 0.01,

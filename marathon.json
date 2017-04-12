@@ -21,11 +21,9 @@
     "minimumHealthCapacity": 1,
     "maximumOverCapacity": 1
   },
-  "version": "2017-04-12T23:19:38.118Z",
   "unreachableStrategy": {
     "inactiveAfterSeconds": 300,
     "expungeAfterSeconds": 600
   },
   "killSelection": "YOUNGEST_FIRST"
-  }
 }

@@ -7,7 +7,7 @@
   "container": {
     "type": "MESOS",
     "docker": {
-      "image": "ubuntu"
+      "image": "registry.marathon.l4lb.thisdcos.directory:5000/debian"
     }
   },
   "ipAddress": {
